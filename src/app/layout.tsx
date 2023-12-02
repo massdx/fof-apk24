@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css'
 import { Work_Sans } from 'next/font/google'
 import LenisScroll from './lenis'
@@ -49,7 +49,7 @@ export default function RootLayout({
         <LenisScroll/>
         <LoadingPage/>
         {children}
-        
+        <Analytics />
         </body>
         
     </html>
