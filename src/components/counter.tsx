@@ -16,8 +16,8 @@ export const Counter = ({ target }: {target: string }) => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            const now = new window.Date();
-            const targetDate = new window.Date(target);
+            const now: any = new window.Date();
+            const targetDate: any = new window.Date(target);
             const distance = targetDate - now;
 
             if (distance > 0) {

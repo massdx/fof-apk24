@@ -15,9 +15,9 @@ export default function FormulaireSponsor() {
 
     script.addEventListener("load", () => {
       // @TS-ignore
-      if (typeof Tally != "undefined") {
+      if (typeof (window as any).Tally !== "undefined") {
         // @TS-ignore
-            Tally.loadEmbeds();
+        (window as any).Tally.loadEmbeds();
         setIsLoading(false);
       }
     });
@@ -79,9 +79,9 @@ export default function FormulaireSponsor() {
               loading="lazy"
               width="100%"
               height="200"
-              frameBorder="0"
-              marginHeight="0"
-              marginWidth="0"
+              frameBorder={0}
+              marginHeight={0}
+              marginWidth={0}
               title="Africa Product Keynote Sponsorship Form __"
             ></iframe>
 

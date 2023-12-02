@@ -15,9 +15,9 @@ export default function FormulaireSpeakers() {
 
     script.addEventListener("load", () => {
       // @TS-ignore
-      if (typeof Tally != "undefined") {
+      if (typeof (window as any).Tally !== "undefined") {
         // @TS-ignore
-            Tally.loadEmbeds();
+        (window as any).Tally.loadEmbeds();
         setIsLoading(false);
       }
     });

@@ -6,6 +6,7 @@ import LoadingPage from '@/components/loading-page'
 const work = Work_Sans({ subsets: ['latin'], weight: ['400', '500' , '600' , '700' , '800'] })
 
 export const metadata = {
+  metadataBase: new URL('https://apk.com'),
   openGraph: {
     title: 'Africa product keynote : SEO title ',
     description: "SEO decription ",

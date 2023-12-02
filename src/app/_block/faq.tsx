@@ -1,5 +1,4 @@
 import Heading from "@/components/heading";
-import Questions from "@/components/question";
 import {
   Accordion,
   AccordionContent,
