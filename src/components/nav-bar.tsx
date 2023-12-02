@@ -6,6 +6,7 @@ import Link from "next/link";
 import Links from "@/lib/links";
 import { usePathname } from "next/navigation";
 import { Button } from "./ui/button";
+import { AppRoute } from "@/lib/app-route";
 const Navbar = () => {
     const pathname = usePathname();
     const [isSticky, setIsSticky] = useState(false);
@@ -42,11 +43,11 @@ const Navbar = () => {
         
             <nav className="animate-in fade-in-10  ">
                 <div
-                    className={` ${isSticky ? "bg-white/70 backdrop-blur-lg " : ""} ${toggle
-                            ? "h-screen bg-black/70 backdrop-blur-lg  duration-300 transition-all  "
+                    className={` ${isSticky ? "bg-white/70 backdrop-blur-lg  border-gray-200 " : "border-transparent"} ${toggle
+                            ? "h-screen bg-white/80 backdrop-blur-lg  duration-300 transition-all  "
                             : "h-[4.5rem] duration-300 transition-all "
                         }  ${isMobile ? "fixed top-0  block" : "hidden "
-                        } overflow-hidden   w-full   z-50`}
+                        } overflow-hidden   w-full   z-50 duration-300 border-b`}
                 >
                     <div className="w-11/12 mx-auto ">
                         <div className="flex flex-row justify-between items-center  p-4">
@@ -79,7 +80,7 @@ const Navbar = () => {
                             </button>
                         </div>
                         <div>
-                            <ul className="flex gap-12 h-screen flex-col  items-start justify-start mt-10 ">
+                            <ul className="flex gap-10 h-screen flex-col  items-start justify-start mt-10 ">
                                 {Links.map((link, key) => {
                                     if (!link.deseable)
                                         return (
@@ -91,8 +92,8 @@ const Navbar = () => {
                                                     key={key}
                                                     className={` ${pathname == link.link
                                                             ? "active font-semibold "
-                                                            : "   p-2"
-                                                        }  text-black`}
+                                                            : "   "
+                                                        }  link`}
                                                 >
                                                     <span data-aos="fade-up" data-aos-delay={key * 100}>
                                                         {link.name}
@@ -102,7 +103,11 @@ const Navbar = () => {
                                         );
                                 })}
                                 <li>
-                                    <button>S'inscrire </button>
+                                <Button>
+                                <Link href={`${AppRoute.inscription}`} passHref>
+                                    S'inscrire
+                                </Link>
+                            </Button>
                                 </li>
                             </ul>
                         </div>
@@ -111,7 +116,7 @@ const Navbar = () => {
                     <div></div>
                 </div>
                 <div
-                    className={` ${isSticky ? "bg-white/70 backdrop-blur-lg  py-1  border-gray-200 " : "border-transparent"}   ${isMobile ? "hidden" : "fixed block top-0"
+                    className={` ${isSticky ? "bg-white/80 backdrop-blur-lg  py-1  border-gray-200 " : "border-transparent"}   ${isMobile ? "hidden" : "fixed block top-0"
                         }   h-fit w-full  z-50 duration-300 border-b `}
                 >
                     <div className="flex h-20 w-10/12 mx-auto items-center  justify-between z-20 ">
@@ -149,7 +154,7 @@ const Navbar = () => {
                         </div>
                         <div className="text-white   w-fit">
                             <Button>
-                                <Link href={"#"} passHref>
+                                <Link href={`${AppRoute.inscription}`} passHref>
                                     S'inscrire
                                 </Link>
                             </Button>

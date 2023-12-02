@@ -4,7 +4,7 @@ import { ClockIcon } from "lucide-react";
 
 const ProgramCard = ({ type, title, description, time, delay = 100 }: { type: string, title: string, description: string, time: string, delay: number }) => {
     return <div data-aos="zoom-in" data-aos-delay={delay}>
-        <Card className="shadow-none group hover:scale-95 hover:shadow-2xl hover:shadow-gray-200 duration-200 " >
+        <Card className="shadow-none relative  group h-full hover:scale-95 hover:shadow-2xl hover:shadow-gray-200 duration-200 " >
             <CardHeader className="">
                 <div className="uppercase tracking-wider font-semibold bg-green-100 text-green-600 py-2 px-4 rounded-md self-start inline-block text-sm  ">
                     {type}

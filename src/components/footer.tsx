@@ -7,14 +7,14 @@ import { FacebookIcon, TwitterIcon } from "lucide-react";
 import Heading from "./heading";
 const Footer = () => {
     const pathname = usePathname();
-    return <footer className="bg-gray-100  pt-8  pb-4 ">
-        <div className=" w-11/12 md:w-9/12 mx-auto  md:py-4">
+    return <footer id="contact" className="bg-gray-100  pt-8  pb-4 ">
+        <div className=" w-11/12 md:w-9/12 mx-auto  md:py-8">
             <div className="sm:flex items-center  sm:items-center sm:justify-between">
                 <div className="flex flex-col  gap-6 w-full">
-                    <div className="flex flex-wrap  items-end gap-10 ">
+                    <div data-aos="fade-up" className="flex flex-wrap  items-end gap-5 md:gap-10 ">
                         <Link href={"#"} passHref className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                             <Heading>
-                                <div data-aos="fade-up" className="text-3xl font-bold leading-[91.1%] tracking-tighter ">
+                                <div  className="text-3xl font-bold leading-[91.1%] tracking-tighter ">
                                     <div>
                                         <span> Africa </span>
                                     </div>
@@ -23,22 +23,27 @@ const Footer = () => {
                                 </div>
                             </Heading>
                         </Link>
-                        <div data-aos="fade-up"  >
-                            <Link passHref href={""} className="hover:text-primary  mx-4 " >
-                                foflome@gmail.com
+                        <div className="flex items-end flex-wrap gap-5 ">
+                            <Link passHref href={""} className="hover:text-primary font-semibold text-lg   md:mx-4 " >
+                             <Heading>
+                             foflome@gmail.com
+                             </Heading>
                             </Link>
-                            <Link passHref href={""} className="hover:text-primary  mx-4 " >
-                                +228 91844075 / 97051306
+                            <Link passHref href={""} className="hover:text-primary font-semibold  " >
+                               <Heading>
+                               +228 91844075 - 97051306
+                               </Heading>
+                               
                             </Link>
                         </div>
                     </div>
-                    <div className="flex justify-between items-center">
-                        <ul className="flex flex-wrap items-center mb-6 text-sm  text-gray-500 sm:mb-0 dark:text-gray-400">
+                    <div className="flex flex-wrap mt-5   place-items-start gap-5 justify-between items-center">
+                        <ul data-aos="fade-up"  className="flex flex-wrap gap-5 self-start items-center mb-6 text-sm  text-gray-500 sm:mb-0 dark:text-gray-400">
                             {Links.map((l, index) => <li key={index}>
                                 <Link data-aos="fade-left" href={l.link} passHref className={` ${pathname == l.link
                                     ? "active font-semibold "
-                                    : "   p-2"
-                                    }  link  me-4 md:me-6`} >{l.name}</Link>
+                                    : "  text-gray-700 "
+                                    }  link   me-4 md:me-6`} >{l.name}</Link>
                             </li>)}
                         </ul>
                         <div className="flex  gap-5 " data-aos="fade-right" data-aos-delay="100">
@@ -68,9 +73,9 @@ const Footer = () => {
             </div>
 
         </div>
-        <div className=" ">
+        <div className="">
             <hr className="my-6 border-gray-300 sm:mx-auto lg:mt-4" />
-            <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <Link href={"#"} passHref className="hover:underline">APK</Link>. Tous droit reservés.</span>
+            <span className="block w-11/12 mx-auto text-sm text-gray-500 text-center dark:text-gray-400">© 2023 <Link href={"#"} passHref className="hover:underline">APK</Link>. Tous droit reservés.</span>
         </div>
     </footer>
 }

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
-import Navbar from '@/components/nav-bar'
 import { Work_Sans } from 'next/font/google'
+import LenisScroll from './lenis'
+import LoadingPage from '@/components/loading-page'
 const work = Work_Sans({ subsets: ['latin'], weight: ['400', '500' , '600' , '700' , '800'] })
 
 export const metadata: Metadata = {
@@ -18,7 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={work.className}>
-        {children}</body>
+
+        <LenisScroll/>
+        <LoadingPage/>
+        {children}
+        
+        </body>
+        
     </html>
   )
 }

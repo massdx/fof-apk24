@@ -4,27 +4,27 @@ import { MapPinIcon } from "lucide-react";
 import Link from "next/link";
 
 const About = () => {
-    return <section className="min-h-screen flex items-center w-11/12 md:w-9/12 mx-auto ">
+    return <section id="apropos" className="lg:min-h-screen py-20 lg:py-0 flex items-center w-11/12 md:w-9/12 mx-auto ">
         <div className="md:grid md:grid-cols-2 w-full ">
-            <div className="md:w-10/12">
-            <div data-aos="fade-right"  data-aos-delay="100"  className=" self-auto flex gap-2 items-center  border border-black  py-2 px-4 rounded-xl w-fit mb-5   ">
-                    <Button variant={"ghost"} size={"icon"} className="    bg-green-500 rounded-full ">
+            <div className="md:w-10/12" data-aos="fade-up"  data-aos-delay="100">
+            <div    className=" self-auto flex gap-2 items-center  border border-black  py-2 px-4 rounded-xl w-fit mb-5   ">
+                    <Button variant={"ghost"} size={"icon"} className="    bg-blue-500 rounded-full ">
                         <MapPinIcon className="text-white " />
                     </Button>
                     <div className="leading-tight text-sm "> Lieux 
-                        <Link href={""} className="text-green-500 block font-semibold text-lg ">Energie Génération </Link>
+                        <Link href={""} className="text-blue-500 block font-semibold text-lg ">Energie Génération </Link>
                     </div>
                 </div>
                 <Heading>
-                    <h2 data-aos="fade-up" className="section-title">1 ère <span className="text-primary "> Conférence </span>autour  du produit au Togo</h2>
+                    <h2 className="section-title">1 ère <span className="text-primary "> Conférence </span>autour  du produit au Togo</h2>
                 </Heading>
-                <p  data-aos="fade-up"  data-aos-delay="50" className=" my-5 md:my-10 ">
-                    Travaillez ensemble en temps réel et offrez aux designers de nouvelles façons de créer. Maintenez l'efficacité des workflows grâce à des outils qui donnent à chaque équipe une visibilité sur l'ensemble du processus.
+                <p    data-aos-delay="50" className=" my-5 md:my-10 ">
+                Placée sous le sous thème de  <span className="font-semibold">l’Accessibilité</span>, cette conférence autour du Produit se veut construire un pont entre les responsables produits, la cibles et le besoin de cette dernière.
                 </p>
               
-                <div data-aos="fade-down"  data-aos-delay="100"  className="flex  md:flex-row flex-col gap-5">
+                <div className="flex my-10 md:mb-0  gap-5">
                     <Button className=" ">
-                        <Link href={"#"} passHref>
+                        <Link href={"#inscription"} passHref>
                             s'inscrire
                         </Link>
                     </Button>

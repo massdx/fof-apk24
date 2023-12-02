@@ -12,7 +12,7 @@ const Program = () => {
             <Heading>
                 <h5 data-aos="fade-up"  className="section-title md:text-center">Ce qu’il y aura au <br /> <span className="text-green-500 ">programme</span></h5>
             </Heading>
-            <div className=" my-10 md:my-20 grid grid-col-1  md:grid-cols-3 lg:grid-cols-4  gap-10 place-items-start ">
+            <div className=" my-10 md:my-20 grid grid-col-1   md:grid-cols-3 lg:grid-cols-4  gap-10 place-items-start ">
                 {programData.map((p, index) => (
                     <ProgramCard key={index} {...p} delay={index * 100} />
                 ))}

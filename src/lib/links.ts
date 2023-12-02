@@ -6,31 +6,41 @@ const Links = [
     },
     {
        name: "À propos",
-       link: "/apropos",
+       link: "/#apropos",
        deseable: false ,
     },
     {
       name: "Agenda",
       link: "/#program",
-      deseable: false ,
+      deseable: true ,
    },
+  
    {
       name: "Intervenants",
-      link: "#speakers",
+      link: "/#intervenants",
       deseable: false ,
    },
     
     {
        name: "Programme",
        link: "/#program",
-       deseable: false ,
+       deseable: true ,
     },
-   
+    {
+      name: "Sponsors",
+      link: "/#sponsors",
+      deseable: false ,
+   },
     {
        name: "Actuallités",
-       link: "/hackaton",
-       deseable: false  ,
+       link: "/actualites",
+       deseable: true  ,
     },
+    {
+      name: "faq",
+      link: "/#faq",
+      deseable: false ,
+   },
     {
        name: "Contact",
        link: "/#contact",

@@ -12,6 +12,8 @@ import Footer from '@/components/footer'
 import { useEffect } from 'react'
 import AOS from "aos"
 import 'aos/dist/aos.css';
+import { LocalisationCta } from './_block/localisation-cta'
+import Faq from './_block/faq'
 
 export default function Home() {
 
@@ -32,9 +34,11 @@ export default function Home() {
     <About />
     <Why />
     <Speakers />
-    <Program />
+    {/*<Program /> */}
     <RegisterCta />
+    <LocalisationCta />
     <Sponsors />
+    <Faq/>
     <Footer />
   </>
 
