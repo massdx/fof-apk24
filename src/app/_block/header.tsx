@@ -79,7 +79,8 @@ const Header = () => {
              L'évolution dynamique de l'écosystème des solutions numériques nous permet aujourd'hui d'affirmer avec confiance, l'émergence de produits africains, conçus par et pour les Africains, tout en portant fièrement nos empreintes culturelles.Cependant, le défi réside dans la découverte de ces produits.
 
             </p>
-            <div className="flex my-10  gap-5">
+            <div     data-aos="fade-up"
+              data-aos-delay="300" className="flex my-10  gap-5">
             
                 <Button className="  ">
                   <Link href={"#inscription"} passHref>

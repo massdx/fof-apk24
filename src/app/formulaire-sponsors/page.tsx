@@ -15,9 +15,9 @@ export default function FormulaireSponsor() {
 
     script.addEventListener("load", () => {
       // @TS-ignore
-      if (window.Tally) {
+      if (typeof Tally != "undefined") {
         // @TS-ignore
-        window.Tally.loadEmbeds();
+            Tally.loadEmbeds();
         setIsLoading(false);
       }
     });
