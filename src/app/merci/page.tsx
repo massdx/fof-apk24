@@ -1,5 +1,5 @@
-export function merci () {
+export default  function merci () {
     return <section>
-        
+        Thaks 
     </section>
 }
