@@ -49,13 +49,13 @@ const  Sponsors = () => {
     return <section  data-aos="fade-up"  data-aos-delay="100" id="sponsors" className=" py-20 lg:min-h-screen bg-[#FDFBFC]  flex items-center ">
         <div className=" sizing mx-auto">
           <Heading>
-            <h6  className=" md:text-center section-title " data-aos="fade-up">Les <span className="text-yellow-500 ">sponsors</span> <br/> du africa product keynote</h6>
+            <h6  className=" md:text-center section-title " data-aos="fade-up">Ils partagent notre histoire.</h6>
           </Heading>
-          <div data-aos="fade-in" className="grid grid-cols-5 my-10 place-items-center  md:my-20 ">
+          <div data-aos="fade-in" className="grid grid-cols-3 md:grid-cols-4 my-10 md:place-items-center gap-y-20  md:my-20 ">
           {sponsors.map((s, index ) => <Image className=" md:w-32 h-auto object-contain" key={index} height={100} width={100} alt={s.name} src={s.url}  data-aos="zoom-in"  data-aos-delay={100 * index }/> )}
           </div>
           <div data-aos="fade-up" data-aos-detaly="100" className="flex md:items-center w-full gap-5   mt-10  md:justify-center">
-                <Button className="bg-yellow-500 ">
+                <Button className="">
                     <Link href={AppRoute.formualireSponsor} passHref>
                       Devenir sponsor
                     </Link>

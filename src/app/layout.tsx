@@ -3,9 +3,10 @@ import './globals.css'
 import { Work_Sans } from 'next/font/google'
 import LenisScroll from './lenis'
 import LoadingPage from '@/components/loading-page'
+import { Metadata } from 'next';
 const work = Work_Sans({ subsets: ['latin'], weight: ['400', '500' , '600' , '700' , '800'] })
 
-export const metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL('https://apk.com'),
   openGraph: {
     title: 'Africa product keynote : SEO title ',
@@ -30,10 +31,7 @@ export const metadata = {
       },
     ],
   },
-  title: {
-    default: "APK Title SEO ici ",
-    template: "%s"
-  },
+  title: 'APK Title SEO ici',
   description: "description APK SEO "
 }
 
@@ -51,7 +49,6 @@ export default function RootLayout({
         {children}
         <Analytics />
         </body>
-        
     </html>
   )
 }

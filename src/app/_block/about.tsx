@@ -1,5 +1,6 @@
 import Heading from "@/components/heading";
 import { Button } from "@/components/ui/button";
+import { lieux } from "@/contents/contents";
 import { MapPinIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -12,7 +13,7 @@ const About = () => {
                         <MapPinIcon className="text-white " />
                     </Button>
                     <div className="leading-tight text-sm "> Lieux 
-                        <Link href={""} className="text-blue-500 block font-semibold text-lg ">Energie Génération </Link>
+                        <Link href={""} className="text-blue-500 block font-semibold text-lg ">{ lieux }</Link>
                     </div>
                 </div>
                 <Heading>
@@ -40,21 +41,21 @@ const About = () => {
                 <div className="w-full h-full  flex items-center justify-center">
                     <div data-aos="zoom-in" className="bg-blue-500  h-[15rem] md:h-[17rem] w-[10rem] md:w-[13rem] text-white flex flex-col px-4 items-center justify-center rounded-3xl shadow-2xl">
                         <div className="flex flex-col w-full  text-center font-bold border-b pb-2 border-white">
-                            <span className="text-6xl  md:text-[5rem] tracking-tighter leading-tight">  05 </span>
-                            <span className="text-3xl ">JANV</span>
+                            <span className="text-6xl  md:text-[5rem] tracking-tighter leading-tight">  19 </span>
+                            <span className="text-3xl ">JAN</span>
                         </div>
-                        <div className="text-lg md:text-xl font-semibold">
-                            conferences <br />& workshop
+                        <div className="text-lg md:text-xl text-center font-semibold">
+                        Keynote <br />& workshop
                         </div>
                     </div>
                     <div data-aos="flip-left" data-aos-delay="100">
                     <div  className="bg-white  translate-y-14 md:translate-y-28 -ml-5  md:-ml-10 h-[15rem] md:h-[17rem] w-[10rem] md:w-[13rem]   flex flex-col px-4    items-center justify-center rounded-3xl shadow-2xl">
                         <div className="flex flex-col w-full  text-center font-bold border-b pb-2 border-black">
-                            <span className="text-6xl  md:text-[5rem] tracking-tighter leading-tight">  06 </span>
-                            <span className="text-3xl ">JANV</span>
+                            <span className="text-6xl  md:text-[5rem] tracking-tighter leading-tight">  20 </span>
+                            <span className="text-3xl ">JAN</span>
                         </div>
-                        <div className="text-lg md:text-xl font-semibold">
-                            conferences <br />& workshop
+                        <div className="text-lg md:text-xl text-center font-semibold">
+                        Keynote <br />& workshop
                         </div>
                     </div>
                     </div>

@@ -30,8 +30,8 @@ export default function FormulaireSpeakers() {
           <Heading>
             <h1 className="section-title md:text-center">
               {" "}
-              Venez pitcher votre experience l <br />
-              du <span className="text-green-500">Africa product keynote </span>
+              Venez pitcher votre experience <br />
+              à l'<span className="text-primary">Africa Product Keynote </span>
             </h1>
           </Heading>
           <p className=" md:w-2/6 md:my-8 my-5  mx-auto md:text-center">

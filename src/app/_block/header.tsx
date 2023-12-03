@@ -14,22 +14,22 @@ const Header = () => {
             data-aos="fade-left"
             className="flex md:gap-0 mb-5 md:mb-0 gap-2 md:flex-col w-fit border border-black  self-start  py-3 md:py-5 px-2 items-center justify-center rounded-2xl"
           >
-            <span className="date-container pr-2 md:pr-0 border-r-[1px] border-gray-300 ">
-              05
+            <span className="date-container pr-2 md:pr-0 border-r-[1px] md:border-r-0  border-gray-300 ">
+              19
             </span>
-            <span className="date-container">06</span>
+            <span className="date-container">20</span>
             <span className="w-4 h-[1px] rounded-full md:hidden bg-black"></span>
             <span className="date-container md:pt-2 border-none md:text-3xl border-gray-900">
-              JANV
+              JAN
             </span>
             <span className="date-container border-none  md:text-3xl  md:-mt-2">
-              2023
+              2024
             </span>
           </div>
           <div className="relative ">
             <div data-aos="fade-in" className="">
               <span className="tracking-wider mb-2 inline-block md:text-2xl">
-                <span className="font-semibold">#</span>APk2024
+                <span className="font-semibold">#</span>APK2024
               </span>
             </div>
             <Image
@@ -61,11 +61,9 @@ const Header = () => {
                     data-aos-delay="50"
                     className="text-primary pr-1"
                   >
-                  
                     Product
                   </div>
                   <div data-aos="fade-up" data-aos-delay="100">
-                
                     Keynote
                   </div>
                 </div>
@@ -78,6 +76,7 @@ const Header = () => {
             >
              L'évolution dynamique de l'écosystème des solutions numériques nous permet aujourd'hui d'affirmer avec confiance, l'émergence de produits africains, conçus par et pour les Africains, tout en portant fièrement nos empreintes culturelles.Cependant, le défi réside dans la découverte de ces produits.
 
+            <br/> La réponse est simple : <span className="font-semibold ">Africa Product Keynote #APK2024</span>
             </p>
             <div     data-aos="fade-up"
               data-aos-delay="300" className="flex my-10  gap-5">

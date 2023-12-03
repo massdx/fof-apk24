@@ -47,11 +47,11 @@ export const Counter = ({ target }: {target: string }) => {
 
     return <div data-aos="fade-up" data-aos-delay="500" className="flex gap-2 my-5  md:my-10">
        <span className="mr-3"> <TimeCounter doted={false} time={days} label="Jours" /></span>
-        <TimeCounter doted={false} time={hours} label="Heur" />
+        <TimeCounter doted={false} time={hours} label="Heures" />
         <span className="text-4xl md:text-6xl font-bold uppercase">:</span>
         <TimeCounter doted={true} time={minutes} label="minutes" />
         <span className="text-4xl md:text-6xl font-bold uppercase">:</span>
-        <TimeCounter doted={true} time={seconds} label="Second" />
+        <TimeCounter doted={true} time={seconds} label="Secondes" />
 
     </div>
 

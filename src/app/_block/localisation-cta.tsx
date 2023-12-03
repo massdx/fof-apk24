@@ -1,7 +1,8 @@
 import Heading from "@/components/heading";
 import { Button } from "@/components/ui/button";
+import { lieux } from "@/contents/contents";
 import { AppRoute } from "@/lib/app-route";
-import { HomeIcon, PhoneCallIcon } from "lucide-react";
+import { HomeIcon, MailIcon, PhoneCallIcon } from "lucide-react";
 import Link from "next/link";
 
 export function LocalisationCta() {
@@ -30,7 +31,7 @@ export function LocalisationCta() {
             <Link href={"mailto:foflome@gmail.com"} className="group block ">
               <div className="flex items-center gap-5 ">
                 <span className="w-10 h-10  md:w-14 md:h-14 bg-gray-200 rounded-full flex justify-center items-center">
-                  <HomeIcon className="text-black h-4 w-4 md:h-6 md:w-6" />
+                  <MailIcon className="text-black h-4 w-4 md:h-6 md:w-6" />
                 </span>
                 <Heading>
                   <span className="md:text-xl group-hover:text-primary  font-semibold ">
@@ -46,7 +47,7 @@ export function LocalisationCta() {
                 </span>
                 <Heading>
                   <span className="md:text-xl group-hover:text-primary  font-semibold ">
-                   Energie génération
+                  {lieux}
                   </span>
                 </Heading>
               </div>
@@ -54,7 +55,7 @@ export function LocalisationCta() {
           </div>
           <div>
             <Button  className="">
-              <Link href={"inscription"} passHref>
+              <Link href={"#inscription"} passHref>
                Je m'inscris maintenant
               </Link>
             </Button>
