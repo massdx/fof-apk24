@@ -9,6 +9,7 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
+    --swiper-theme-color: hsl(0 100% 68%) !important ;
 
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -247,6 +248,9 @@
       transform: translate(calc(-50% - 1rem));
     }
   }
+  .swiper-pagination-bullet .swiper-pagination-bullet-active {
+    background-color: red !important;
+  }
   
 }
 
@@ -273,4 +277,5 @@
   .section-title {
     @apply text-4xl  md:text-6xl font-bold tracking-tight ; 
   }
+
 }

@@ -12,7 +12,7 @@ const About = () => {
                     <Button variant={"ghost"} size={"icon"} className="    bg-blue-500 rounded-full ">
                         <MapPinIcon className="text-white " />
                     </Button>
-                    <div className="leading-tight text-sm "> Lieux 
+                    <div className="leading-tight text-sm "> Lieu
                         <Link href={""} className="text-blue-500 block font-semibold text-lg ">{ lieux }</Link>
                     </div>
                 </div>

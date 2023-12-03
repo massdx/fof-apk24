@@ -2,7 +2,7 @@ export const parteners = [
     {
         id:1 ,
         name: "Killingiants",
-        url: "/assets/img/parteners/killing.png"
+        url: "/assets/img/parteners/Killingiants.png"
     },
     {
         id:2 ,
@@ -10,8 +10,23 @@ export const parteners = [
         url: "/assets/img/parteners/omerta.png"
     },
     {
-        id:2 ,
+        id:4 ,
+        name: "notion",
+        url: "/assets/img/parteners/notion.png"
+    },
+    {
+        id:3 ,
         name: "coworkers",
-        url: "/assets/img/parteners/coworkers.png"
+        url: "/assets/img/parteners/co.png"
+    },
+    {
+        id:5 ,
+        name: "notino togo",
+        url: "/assets/img/parteners/notionTg.png"
+    },
+    {
+        id:7 ,
+        name: "Research",
+        url: "/assets/img/parteners/research.png"
     }
 ]   

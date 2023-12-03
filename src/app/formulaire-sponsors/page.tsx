@@ -26,7 +26,7 @@ export default function FormulaireSponsor() {
     <>
       <Navbar />
       <section className="lg:min-h-screen  md:py-20 ld:py-0 ">
-        <div className=" bg-[url(/assets/img/bg2.jpg)] bg-[70%] md:bg-right mb-5 bg-cover bg-no-repeat py-20">
+        <div data-aos="fade-up" className=" bg-[url(/assets/img/bg2.jpg)] bg-[70%] md:bg-right mb-5 bg-cover bg-no-repeat py-20">
           <div className="w-11/12 md:w-9/12 mx-auto  ">
             <Heading>
               <h1 className="section-title md:text-center">
@@ -41,7 +41,7 @@ export default function FormulaireSponsor() {
             </p>
           </div>
         </div>
-        <div className=" w-11/12 md:w-10/12 lg:w-5/12 mx-auto  ">
+        <div data-aos="fade-up" data-aos-dalay="100" className=" w-11/12 md:w-10/12 lg:w-5/12 mx-auto  ">
           <div className="bg-white shadow-md -translate-y-20  h-fit w-full rounded-lg p-3 ">
             {isLoading && (
               <div>

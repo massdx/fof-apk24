@@ -32,26 +32,10 @@ const Header = () => {
                 <span className="font-semibold">#</span>APK2024
               </span>
             </div>
-            <Image
-              data-aos="zoom-in"
-              data-aos-delay="600"
-              height={120}
-              width={120}
-              alt="moi"
-              className="absolute hidden lg:block md:right-10 md:bottom-10  lg:-right-20 lg:top-56"
-              src={"/assets/motifs/moi.png"}
-            />
-            <Image
-              data-aos="zoom-in"
-              data-aos-delay="800"
-              className="absolute hidden lg:block z-30 md:right-10 lg:right-5 lg:top-18"
-              height={120}
-              width={120}
-              alt="moi"
-              src={"/assets/motifs/vous.png"}
-            />
+
+           
             <Heading>
-              <h1 className="text-5xl overflow-hidden pb-2 md:text-6xl  lg:text-[6.4rem] relative font-bold leading-[91.1%] tracking-tighter ">
+              <h1 className="text-5xl pb-2 md:text-6xl  lg:text-[6.4rem] relative font-bold leading-[91.1%] tracking-tighter ">
                 <div>
                   <span data-aos="fade-up"> Africa </span>
                 </div>
@@ -61,39 +45,68 @@ const Header = () => {
                     data-aos-delay="50"
                     className="text-primary pr-1"
                   >
+                     <Image
+              data-aos="zoom-in"
+              data-aos-delay="800"
+              className="absolute hidden -right-16 -top-16 lg:block z-30 "
+              height={110}
+              width={110}
+              alt="moi"
+              src={"/assets/motifs/vous.png"}
+            />
                     Product
                   </div>
-                  <div data-aos="fade-up" data-aos-delay="100">
-                    Keynote
+                  <div
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                    className="relative pl-1"
+                  >
+                    Keynotë
+                    <Image
+                      data-aos="zoom-in"
+                      data-aos-delay="600"
+                      height={100}
+                      width={100}
+                      alt="moi"
+                      className="absolute z-50 hidden    lg:block  "
+                      src={"/assets/motifs/moi.png"}
+                    />
                   </div>
                 </div>
               </h1>
             </Heading>
+
             <p
               data-aos="fade-up"
               data-aos-delay="200"
               className=" text-md md:text-xl my-5  md:my-8 "
             >
-             L'évolution dynamique de l'écosystème des solutions numériques nous permet aujourd'hui d'affirmer avec confiance, l'émergence de produits africains, conçus par et pour les Africains, tout en portant fièrement nos empreintes culturelles.Cependant, le défi réside dans la découverte de ces produits.
-
-            <br/> La réponse est simple : <span className="font-semibold ">Africa Product Keynote #APK2024</span>
+              L'évolution dynamique de l'écosystème des solutions numériques
+              nous permet aujourd'hui d'affirmer avec confiance, l'émergence de
+              produits africains, conçus par et pour les Africains, tout en
+              portant fièrement nos empreintes culturelles.Cependant, le défi
+              réside dans la découverte de ces produits.
+              <br /> La réponse est simple :{" "}
+              <span className="font-semibold ">
+                Africa Product Keynote #APK2024
+              </span>
             </p>
-            <div     data-aos="fade-up"
-              data-aos-delay="300" className="flex my-10  gap-5">
-            
-                <Button className="  ">
-                  <Link href={"#inscription"} passHref>
-                    Inscription
-                  </Link>
-                </Button>
-           
-             
-                <Button variant={"secondary"} className="">
-                  <Link href={"#apropos"} passHref>
-                    En savoir plus
-                  </Link>
-                </Button>
-             
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              className="flex my-10  gap-5"
+            >
+              <Button className="  ">
+                <Link href={"#inscription"} passHref>
+                  Inscription
+                </Link>
+              </Button>
+
+              <Button variant={"secondary"} className="">
+                <Link href={"#apropos"} passHref>
+                  En savoir plus
+                </Link>
+              </Button>
             </div>
             <Counter target={"2024-01-19T07:59:59"} />
           </div>
