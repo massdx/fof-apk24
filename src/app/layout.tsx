@@ -9,13 +9,13 @@ const work = Work_Sans({ subsets: ['latin'], weight: ['400', '500' , '600' , '70
 export const metadata: Metadata = {
   metadataBase: new URL('https://apk.com'),
   openGraph: {
-    title: 'Africa product keynote : SEO title ',
-    description: "SEO decription ",
+    title: "Explorez l'Émergence des Produits Numériques Africains avec Africa Product Keynote #APK2024",
+    description: "Découvrez la révolution des solutions numériques conçues par et pour les Africains, célébrant fièrement nos racines culturelles. Plongez dans l'écosystème dynamique des produits africains lors de l'Africa Product Keynote #APK2024, dévoilant l'innovation, la créativité et l'avenir numérique du continent.",
     type: 'article',
     publishedTime: '2023-8-31T00:00:00.000Z',
-    authors: ['TDEV COMMUNITY'],
-    url: 'festival.ourtdev.com',
-    siteName: 'Tdev festival 2023',
+    authors: ['Frient of figma lomé'],
+    url: 'fof.tg',
+    siteName: 'fof.tg',
     locale: 'fr_TG',
     images: [
       {
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
       },
     ],
   },
-  title: 'APK Title SEO ici',
-  description: "description APK SEO "
+  title: "Explorez l'Émergence des Produits Numériques Africains avec Africa Product Keynote #APK2024",
+  description: "Découvrez la révolution des solutions numériques conçues par et pour les Africains, célébrant fièrement nos racines culturelles. Plongez dans l'écosystème dynamique des produits africains lors de l'Africa Product Keynote #APK2024, dévoilant l'innovation, la créativité et l'avenir numérique du continent."
 }
 
 export default function RootLayout({

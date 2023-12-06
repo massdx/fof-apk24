@@ -18,11 +18,11 @@ export function LocalisationCta() {
           <div className="space-y-5  my-10 ">
             <Link href={"tel:+22891844075"} className="group block">
               <div className="flex items-center gap-5">
-                <span className="w-10 h-10  md:w-14 md:h-14 bg-gray-200 rounded-full flex justify-center items-center">
-                  <PhoneCallIcon className="text-black h-4 w-4 md:h-6 md:w-6" />
+                <span className="w-10 h-10  md:w-12 md:h-12  group-hover:bg-primary duration-200 bg-gray-200 rounded-full flex justify-center items-center">
+                  <PhoneCallIcon className="text-black h-4 w-4 md:h-5 md:w-5" />
                 </span>
                 <Heading>
-                  <span className="md:text-xl font-semibold ">
+                  <span className="md:text-xl   group-hover:text-primary  font-medium duration-200  ">
                   +228 91844075 / 97051306
                   </span>
                 </Heading>
@@ -30,11 +30,11 @@ export function LocalisationCta() {
             </Link>
             <Link href={"mailto:foflome@gmail.com"} className="group block ">
               <div className="flex items-center gap-5 ">
-                <span className="w-10 h-10  md:w-14 md:h-14 bg-gray-200 rounded-full flex justify-center items-center">
-                  <MailIcon className="text-black h-4 w-4 md:h-6 md:w-6" />
+                <span className="w-10 h-10  md:w-12 md:h-12 group-hover:bg-primary duration-200 bg-gray-200 rounded-full flex justify-center items-center">
+                  <MailIcon className="text-black h-4 w-4 md:h-5 md:w-5" />
                 </span>
                 <Heading>
-                  <span className="md:text-xl group-hover:text-primary  font-semibold ">
+                  <span className="md:text-xl group-hover:text-primary duration-200  font-medium ">
                   foflome@gmail.com
                   </span>
                 </Heading>
@@ -42,11 +42,11 @@ export function LocalisationCta() {
             </Link>
             <Link href={AppRoute.mapLink} target="_blank" className="group block ">
               <div className="flex items-center gap-5 ">
-                <span className="w-10 h-10  md:w-14 md:h-14 bg-gray-200 rounded-full flex justify-center items-center">
-                  <HomeIcon className="text-black h-4 w-4 md:h-6 md:w-6" />
+                <span className="w-10 h-10  md:w-12 md:h-12  group-hover:bg-primary duration-200 bg-gray-200 rounded-full flex justify-center items-center">
+                  <HomeIcon className="text-black h-4 w-4 md:h-5 md:w-5" />
                 </span>
                 <Heading>
-                  <span className="md:text-xl group-hover:text-primary  font-semibold ">
+                  <span className="md:text-xl group-hover:text-primary   duration-200    font-medium  ">
                   {lieux}
                   </span>
                 </Heading>

@@ -60,7 +60,7 @@ const Navbar = () => {
                             />
                             <button
                                 data-aos="fade-right"
-                                className={`  px-2 py-1 bg-primary rounded-lg shadow-lg`}
+                                className={` -mr-5 py-1 rounded-lg `}
                                 onClick={toggleNavBar}
                             >
                                 <svg

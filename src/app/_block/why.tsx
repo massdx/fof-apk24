@@ -16,9 +16,9 @@ const Why = () => {
             <span className=""> évènement</span> ?
           </h3>
         </Heading>
-        <p className="md:text-center mb-14 ">
+        <p   data-aos="fade-up" className="md:text-center md:text-lg  mb-14 ">
           Les{" "}
-          <span className="font-semibold text-primary ">
+          <span className="font-medium text-primary ">
             4+1 principales raisons{" "}
           </span>
           pour lesquelles votre entreprise et vous deviez participer à{" "}
@@ -96,7 +96,7 @@ const Why = () => {
           </WhyCard>
           <WhyCard
             delay={400}
-            title="couter, vivre et partager des histoires"
+            title="Ecouter, vivre et partager des histoires"
             description="Laissez-vous inspirer par les réussites concrètes de Africa Product Keynote."
           >
             <svg

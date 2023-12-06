@@ -8,7 +8,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header className="min-h-screen   flex items-center relative bg-[url(/assets/img/background.jpg)]   md:bg-right-top  bg-[50%] md:bg-contain  bg-no-repeat ">
-      <div className="sizing mx-auto relative md:mt-0 pt-16 ">
+      <div className="sizing mx-auto relative md:mt-0 pt-20 md:pt-32 ">
         <div className="md:w-11/12 lg:w-8/12 md:flex  gap-8 ">
           <div
             data-aos="fade-left"
@@ -28,14 +28,14 @@ const Header = () => {
           </div>
           <div className="relative ">
             <div data-aos="fade-in" className="">
-              <span className="tracking-wider mb-2 inline-block md:text-2xl">
-                <span className="font-semibold">#</span>APK2024
+              <span className="tracking-wider mb-2 inline-block md:text-xl">
+                <span className="font-semibold">#</span>FOF PRESENTE
               </span>
             </div>
 
            
             <Heading>
-              <h1 className="text-5xl pb-2 md:text-6xl  lg:text-[6.4rem] relative font-bold leading-[91.1%] tracking-tighter ">
+              <h1 className="text-[2.7rem]  sm:text-5xl pb-2 md:text-6xl  lg:text-[6.4rem] relative font-bold leading-[91.1%] tracking-tighter ">
                 <div>
                   <span data-aos="fade-up"> Africa </span>
                 </div>
@@ -79,14 +79,14 @@ const Header = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="200"
-              className=" text-md md:text-xl my-5  md:my-8 "
+              className=" text-md md:text-xl my-5  md:my-7 "
             >
               L'évolution dynamique de l'écosystème des solutions numériques
               nous permet aujourd'hui d'affirmer avec confiance, l'émergence de
               produits africains, conçus par et pour les Africains, tout en
               portant fièrement nos empreintes culturelles.Cependant, le défi
               réside dans la découverte de ces produits.
-              <br /> La réponse est simple :{" "}
+              La réponse est simple :
               <span className="font-semibold ">
                 Africa Product Keynote #APK2024
               </span>
@@ -94,7 +94,7 @@ const Header = () => {
             <div
               data-aos="fade-up"
               data-aos-delay="300"
-              className="flex my-10  gap-5"
+              className="flex my-10 gap-2  md:gap-5"
             >
               <Button className="  ">
                 <Link href={"#inscription"} passHref>

@@ -88,7 +88,7 @@ const  Sponsors = () => {
           </Heading>
           <div data-aos="fade-in" className="flex flex-wrap items-center md:justify-center  gap-10 md:gap-20  my-10 md:place-items-center md:my-20 ">
           {sponsors.map((s, index ) =><div  key={index} className="h-10 md:h-14">
-            <Image className=" w-full  h-full " height={100} width={100} alt={s.name} src={s.url}  data-aos="zoom-in"  data-aos-delay={100 * index }/>
+            <Image className=" w-full  h-full object-contain" height={100} width={100} alt={s.name} src={s.url}  data-aos="zoom-in"  data-aos-delay={100 * index }/>
           </div> )}
           </div>
           <div data-aos="fade-up" data-aos-detaly="100" className="flex md:items-center w-full gap-5   mt-10  md:justify-center">

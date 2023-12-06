@@ -35,9 +35,8 @@ export default function FormulaireSponsor() {
                 du <span className="text-primary">produit en Afrique</span>
               </h1>
             </Heading>
-            <p className=" md:w-2/6 md:my-8 my-5  mx-auto md:text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-              placeat veritatis nobis officia eveniet,
+            <p className=" md:w-3/6 md:my-8 my-5  mx-auto md:text-center">
+            En tant que leader technologique en Afrique, devenez partenaire stratégique de l'Africa Product Keynote #APK2024. Cette occasion unique positionnera votre entreprise au cœur de l'innovation africaine.
             </p>
           </div>
         </div>
