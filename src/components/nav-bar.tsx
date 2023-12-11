@@ -7,15 +7,16 @@ import Links from "@/lib/links";
 import { usePathname } from "next/navigation";
 import { Button } from "./ui/button";
 import { AppRoute } from "@/lib/app-route";
-import Lenis from "@studio-freight/lenis";
-import { LenisContext } from "@/app/lenis-provider";
+
+import { Lenis, useLenis } from "@studio-freight/react-lenis";
+
 
 const Navbar = () => {
     const pathname = usePathname();
     const [isSticky, setIsSticky] = useState(false);
     const [toggle, setToggle] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
-    const lenisInstance = useContext(LenisContext);
+    const lenisInstance =  useLenis();
     const isScrolling = () => {
         setIsSticky(window.scrollY > 100 ? true : false);
         if (isMobile && toggle) {
@@ -32,8 +33,10 @@ const Navbar = () => {
         setIsMobile(screenWidth < 1300);
     };
     function scrollTo({target} :{target:string }) {
-    
-        lenisInstance?.scrollTo(target);
+        if(lenisInstance) {
+            lenisInstance.scrollTo(target);
+        }
+       
       }
 
     useEffect(() => {

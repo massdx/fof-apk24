@@ -1,9 +1,10 @@
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { Work_Sans } from "next/font/google";
-import {LenisProvider} from "./lenis-provider";
+import { LenisProvider } from "./lenis-provider";
 import LoadingPage from "@/components/loading-page";
 import { Metadata } from "next";
+
 
 const work = Work_Sans({
   subsets: ["latin"],
@@ -51,10 +52,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={work.className}>
-        <LenisProvider>
-          <LoadingPage />
-          {children}
-        </LenisProvider>
+       <LenisProvider>
+       <LoadingPage />
+            {children}
+       </LenisProvider>
+         
+      
+
         <Analytics />
       </body>
     </html>

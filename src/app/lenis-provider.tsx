@@ -1,24 +1,19 @@
 "use client";
-import Lenis from "@studio-freight/lenis";
-import Script from "next/script";
-import { Children, ReactNode, createContext, useEffect } from "react";
 
-export const LenisContext = createContext<Lenis | null>(null);
+
+import { Children, ReactNode, createContext, useContext, useEffect } from "react";
+
+import { ReactLenis } from "@studio-freight/react-lenis";
 
 export const LenisProvider = ({ children }: { children: ReactNode }) => {
-  const lenisInstance = new Lenis();
+  const lenisInstance = null;
 
-  useEffect(() => {
-    function raf(time: any) {
-      lenisInstance.raf(time);
-      requestAnimationFrame(raf);
-    }
 
-    requestAnimationFrame(raf);
-  }, []);
+
   return (
-    <LenisContext.Provider value={lenisInstance}>
+    <ReactLenis root options={{ lerp: 0.1, duration: 1.5, smoothTouch: true }}>
       {children}
-    </LenisContext.Provider>
+      </ReactLenis>
+ 
   );
 };
