@@ -15,9 +15,9 @@ export function LocalisationCta() {
               Rencontrons-nous <br /> tous sur le site
             </div>
           </Heading>
-          <div className="space-y-5  my-10 ">
-            <Link href={"tel:+22891844075"} className="group block">
-              <div className="flex items-center gap-5">
+          <div className="space-y-5 flex flex-col   my-10 ">
+            <Link href={"tel:+22891844075"} className="group w-fit  ">
+              <div className=" items-center gap-5 inline-flex ">
                 <span className="w-10 h-10  md:w-12 md:h-12  group-hover:bg-primary duration-200 bg-gray-200 rounded-full flex justify-center items-center">
                   <PhoneCallIcon className="text-black h-4 w-4 md:h-5 md:w-5" />
                 </span>
@@ -28,7 +28,7 @@ export function LocalisationCta() {
                 </Heading>
               </div>
             </Link>
-            <Link href={"mailto:foflome@gmail.com"} className="group block ">
+            <Link href={"mailto:foflome@gmail.com"} className="group w-fit ">
               <div className="flex items-center gap-5 ">
                 <span className="w-10 h-10  md:w-12 md:h-12 group-hover:bg-primary duration-200 bg-gray-200 rounded-full flex justify-center items-center">
                   <MailIcon className="text-black h-4 w-4 md:h-5 md:w-5" />
@@ -40,7 +40,7 @@ export function LocalisationCta() {
                 </Heading>
               </div>
             </Link>
-            <Link href={AppRoute.mapLink} target="_blank" className="group block ">
+            <Link href={AppRoute.mapLink} target="_blank" className="group w-fit ">
               <div className="flex items-center gap-5 ">
                 <span className="w-10 h-10  md:w-12 md:h-12  group-hover:bg-primary duration-200 bg-gray-200 rounded-full flex justify-center items-center">
                   <HomeIcon className="text-black h-4 w-4 md:h-5 md:w-5" />

@@ -2,7 +2,7 @@ export const sponsors = [
     {
         id:1 ,
         name: "Killingiants",
-        url: "/assets/img/parteners/Killingiants.png"
+        url: "/assets/img/parteners/killing.png"
     },
     {
         id:2 ,

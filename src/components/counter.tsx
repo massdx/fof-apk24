@@ -8,13 +8,14 @@ import TimeCounter from "./time"
 
 const anton = Anton({ subsets: ['latin'], weight: ['400'], variable: "--font-anton" })
 export const Counter = ({ target }: {target: string }) => {
-
+    const [isLoading , setIsLoading]= useState(true);
     const [days, setDays] = useState('');
     const [hours, setHours] = useState('');
     const [minutes, setMinutes] = useState('');
     const [seconds, setSeconds] = useState('');
 
     useEffect(() => {
+      
         const interval = setInterval(() => {
             const now: any = new window.Date();
             const targetDate: any = new window.Date(target);
@@ -44,6 +45,7 @@ export const Counter = ({ target }: {target: string }) => {
             clearInterval(interval);
         };
     }, [target]);
+
 
     return <div data-aos="fade-up" data-aos-delay="500" className="flex gap-2 my-4  md:my-10">
        <span className="mr-3"> <TimeCounter doted={false} time={days} label="Jours" /></span>

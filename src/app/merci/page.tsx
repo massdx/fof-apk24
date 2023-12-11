@@ -85,7 +85,7 @@ export default function Merci() {
 
               <Heading>
                 <h1 className="text-[2.7rem]  sm:text-4xl pb-2 md:text-5xl  lg:text-[5rem] relative font-bold leading-[91.1%] tracking-tighter ">
-                  Inscription <span className="text-primary ">reussi</span>
+                  Inscription <span className="text-primary ">reussie</span>
                 </h1>
               </Heading>
               <p className=" md:w-5/6 md:my-8 my-5   ">

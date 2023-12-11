@@ -30,7 +30,7 @@ export default function Home() {
   return <>
     <Navbar />
     <Header />
-    <Parteners />
+
     <About />
     <Why />
     <Speakers />

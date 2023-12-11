@@ -6,7 +6,7 @@ const Links = [
     },
     {
        name: "À propos",
-       link: "/#apropos",
+       link: "#apropos",
        deseable: false ,
     },
     {
@@ -16,19 +16,19 @@ const Links = [
    },
   
    {
-      name: "Intervenants",
-      link: "/#intervenants",
+      name: "Nos speakers",
+      link: "#speakers",
       deseable: false ,
    },
     
     {
        name: "Programme",
-       link: "/#program",
+       link: "#program",
        deseable: true ,
     },
     {
-      name: "Sponsors",
-      link: "/#sponsors",
+      name: "Nos sponsors",
+      link: "#sponsors",
       deseable: false ,
    },
     {
@@ -38,12 +38,12 @@ const Links = [
     },
     {
       name: "faq",
-      link: "/#faq",
+      link: "#faq",
       deseable: false ,
    },
     {
        name: "Contact",
-       link: "/#contact",
+       link: "#contact",
        deseable: false ,
     }
    ]

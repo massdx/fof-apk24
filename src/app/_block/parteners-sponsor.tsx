@@ -63,9 +63,9 @@ function addAnimation() {
             <Image
               className="w-auto h-8 md:h-10 mx-auto "
               key={index}
-              height={100}
-              width={100}
-              alt=""
+              height={200}
+              width={200}
+              alt={p.name}
               src={p.url}
               data-aos="zoom-in"
               data-aos-delay={100 * index}
@@ -81,7 +81,7 @@ function addAnimation() {
 
 
 const  Sponsors = () => {
-    return <section  data-aos="fade-up"  data-aos-delay="100" id="sponsors" className=" py-20 lg:min-h-screen bg-[#FDFBFC]  flex items-center ">
+    return <section  data-aos="fade-up"  data-aos-delay="100" id="sponsors" className=" py-14 md:py-20 lg:py-36  bg-[#FDFBFC]  flex items-center ">
         <div className=" sizing mx-auto">
           <Heading>
             <h6  className=" md:text-center section-title " data-aos="fade-up">Ils partagent notre histoire.</h6>
@@ -93,7 +93,7 @@ const  Sponsors = () => {
           </div>
           <div data-aos="fade-up" data-aos-detaly="100" className="flex md:items-center w-full gap-5   mt-10  md:justify-center">
                 <Button className="">
-                    <Link href={AppRoute.formualireSponsor} passHref>
+                    <Link href={AppRoute.formulaireSponsor} passHref>
                       Devenir sponsor
                     </Link>
                 </Button>

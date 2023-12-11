@@ -6,11 +6,11 @@ import Link from "next/link";
 
 const Speakers = () => {
   return (
-    <section  id="intervenants" className="md:w-9/12 w-11/12 mx-auto flex items-center  py-20 md:py-32 ">
+    <section  id="speakers" className="md:w-9/12 w-11/12 mx-auto flex items-center  py-20 md:py-32 ">
       <div className="w-full" data-aos="fade-up"  data-aos-delay="100">
         <Heading>
           <h2 className="section-title md:text-center">
-            Nos <span className="  "> Intervenants </span>
+            Nos <span className="  "> Speakers </span>
           </h2>
         </Heading>
         <p className="md:w-3/6 md:mx-auto md:text-center leading-relaxed text-gray-800 my-10">

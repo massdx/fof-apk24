@@ -2,6 +2,7 @@ import { Counter } from "@/components/counter";
 import Heading from "@/components/heading";
 import TimeCounter from "@/components/time";
 import { Button } from "@/components/ui/button";
+import { AppRoute } from "@/lib/app-route";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -84,11 +85,11 @@ const Header = () => {
               L'évolution dynamique de l'écosystème des solutions numériques
               nous permet aujourd'hui d'affirmer avec confiance, l'émergence de
               produits africains, conçus par et pour les Africains, tout en
-              portant fièrement nos empreintes culturelles.Cependant, le défi
+              portant fièrement nos empreintes culturelles. Cependant, le défi
               réside dans la découverte de ces produits.
-              La réponse est simple :
+              La réponse est simple  :
               <span className="font-semibold ">
-                Africa Product Keynote #APK2024
+              {" "} Africa Product Keynote #APK2024
               </span>
             </p>
             <div
@@ -97,7 +98,7 @@ const Header = () => {
               className="flex my-10 gap-2  md:gap-5"
             >
               <Button className="  ">
-                <Link href={"#inscription"} passHref>
+                <Link href={AppRoute.formulaireParticipants} target="_blank" passHref>
                   Inscription
                 </Link>
               </Button>

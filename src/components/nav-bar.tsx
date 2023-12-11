@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Image from "next/image";
 
 import Link from "next/link";
@@ -7,12 +7,15 @@ import Links from "@/lib/links";
 import { usePathname } from "next/navigation";
 import { Button } from "./ui/button";
 import { AppRoute } from "@/lib/app-route";
+import Lenis from "@studio-freight/lenis";
+import { LenisContext } from "@/app/lenis-provider";
+
 const Navbar = () => {
     const pathname = usePathname();
     const [isSticky, setIsSticky] = useState(false);
     const [toggle, setToggle] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
-
+    const lenisInstance = useContext(LenisContext);
     const isScrolling = () => {
         setIsSticky(window.scrollY > 100 ? true : false);
         if (isMobile && toggle) {
@@ -28,8 +31,13 @@ const Navbar = () => {
         const screenWidth = window.innerWidth;
         setIsMobile(screenWidth < 1300);
     };
+    function scrollTo({target} :{target:string }) {
+    
+        lenisInstance?.scrollTo(target);
+      }
 
     useEffect(() => {
+       
         checkMobileOrTablet();
         window.addEventListener("scroll", isScrolling);
         window.addEventListener("load", isScrolling);
@@ -86,9 +94,9 @@ const Navbar = () => {
                                         return (
                                             <li key={link.name} className=" ">
                                                 <Link
-                                                    onClick={() => toggleNavBar()}
-                                                    passHref
-                                                    href={`${link.link}`}
+                                                     onClick={() =>{ scrollTo({target: link.link}) , toggleNavBar()}}
+                                                     passHref
+                                                     href={` ${ pathname == "/" ? link.link : "/"+link.link}`}
                                                     key={key}
                                                     className={` ${pathname == link.link
                                                             ? "active font-semibold "
@@ -119,7 +127,7 @@ const Navbar = () => {
                     className={` ${isSticky ? "bg-white/80 backdrop-blur-lg  py-1  border-gray-200 " : "border-transparent"}   ${isMobile ? "hidden" : "fixed block top-0"
                         }   h-fit w-full  z-50 duration-300 border-b `}
                 >
-                    <div className="flex h-20 w-10/12 mx-auto items-center  justify-between z-20 ">
+                    <div className="flex h-20 w-9/12 mx-auto items-center  justify-between z-20 ">
                         <div className="flex items-center justify-center gap-10">
                             <Image
                                 className="-ml-5"
@@ -134,9 +142,11 @@ const Navbar = () => {
                                         return (
                                             <li key={link.name} className=" ">
                                                 <Link
-                                                    onClick={() => toggleNavBar()}
+                                              
+                                                    onClick={() =>{ scrollTo({target: link.link}) , toggleNavBar()}}
                                                     passHref
-                                                    href={`${link.link}`}
+                                                    href={` ${ pathname == "/" ? link.link : "/"+link.link}`}
+                                                
                                                     key={key}
                                                     className={` ${pathname == link.link
                                                             ? "active font-semibold "
