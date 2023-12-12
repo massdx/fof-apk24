@@ -20,10 +20,12 @@
     "html-to-react": "^1.7.0",
     "lucide-react": "^0.292.0",
     "next": "14.0.3",
+    "prop-types": "^15.8.1",
     "react": "^18",
     "react-canvas-confetti": "^1.4.0",
     "react-dom": "^18",
     "react-spinners": "^0.13.8",
+    "sharp": "^0.33.0",
     "swiper": "^11.0.5",
     "tailwind-merge": "^2.0.0",
     "tailwindcss-animate": "^1.0.7"

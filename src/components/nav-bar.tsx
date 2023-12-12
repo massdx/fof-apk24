@@ -99,7 +99,7 @@ const Navbar = () => {
                                                 <Link
                                                      onClick={() =>{ scrollTo({target: link.link}) , toggleNavBar()}}
                                                      passHref
-                                                     href={` ${ pathname == "/" ? link.link : "/"+link.link}`}
+                                                     href={`${pathname == "/" ? link.link : "/"+link.link}`}
                                                     key={key}
                                                     className={` ${pathname == link.link
                                                             ? "active font-semibold "
@@ -148,7 +148,7 @@ const Navbar = () => {
                                               
                                                     onClick={() =>{ scrollTo({target: link.link}) , toggleNavBar()}}
                                                     passHref
-                                                    href={` ${ pathname == "/" ? link.link : "/"+link.link}`}
+                                                    href={`${pathname == "/" ? link.link : "/"+link.link}`}
                                                 
                                                     key={key}
                                                     className={` ${pathname == link.link
