@@ -5,14 +5,13 @@ import { LenisProvider } from "./lenis-provider";
 import LoadingPage from "@/components/loading-page";
 import { Metadata } from "next";
 
-
 const work = Work_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://apk.com"),
+  metadataBase: new URL("https://fof.tg"),
   openGraph: {
     title:
       "Explorez l'Émergence des Produits Numériques Africains avec Africa Product Keynote #APK2024",
@@ -52,12 +51,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={work.className}>
-       <LenisProvider>
-       <LoadingPage />
-            {children}
-       </LenisProvider>
-         
-      
+        <LenisProvider>
+          <LoadingPage />
+          {children}
+        </LenisProvider>
 
         <Analytics />
       </body>

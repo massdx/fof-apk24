@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
 @tailwind base;
-
 @tailwind components;
 @tailwind utilities;
- 
-@layer base {
 
+@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -13,57 +11,57 @@
 
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
- 
+
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
- 
-    --primary:0 100% 68%; 
+
+    --primary: 0 100% 68%;
     --primary-foreground: 0 0% 98%;
- 
+
     --secondary: 12 100% 88%;
     --secondary-foreground: 240 5.9% 10%;
- 
+
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
- 
+
     --accent: 240 4.8% 95.9%;
     --accent-foreground: 240 5.9% 10%;
- 
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring:  275 35% 31%;
- 
+    --ring: 275 35% 31%;
+
     --radius: 0.5rem;
   }
- 
+
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
- 
+
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
- 
+
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
- 
+
     --primary: 0 0% 98%;
     --primary-foreground: 240 5.9% 10%;
- 
+
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
- 
+
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
- 
+
     --accent: 240 3.7% 15.9%;
     --accent-foreground: 0 0% 98%;
- 
+
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
- 
+
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
@@ -71,85 +69,84 @@
 
   /*spiner css */
   .lds-spinner {
-  color: official;
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.lds-spinner div {
-  transform-origin: 40px 40px;
-  animation: lds-spinner 1.2s linear infinite;
-}
-.lds-spinner div:after {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 3px;
-  left: 37px;
-  width: 6px;
-  height: 18px;
-  border-radius: 20%;
-  background: #fff;
-}
-.lds-spinner div:nth-child(1) {
-  transform: rotate(0deg);
-  animation-delay: -1.1s;
-}
-.lds-spinner div:nth-child(2) {
-  transform: rotate(30deg);
-  animation-delay: -1s;
-}
-.lds-spinner div:nth-child(3) {
-  transform: rotate(60deg);
-  animation-delay: -0.9s;
-}
-.lds-spinner div:nth-child(4) {
-  transform: rotate(90deg);
-  animation-delay: -0.8s;
-}
-.lds-spinner div:nth-child(5) {
-  transform: rotate(120deg);
-  animation-delay: -0.7s;
-}
-.lds-spinner div:nth-child(6) {
-  transform: rotate(150deg);
-  animation-delay: -0.6s;
-}
-.lds-spinner div:nth-child(7) {
-  transform: rotate(180deg);
-  animation-delay: -0.5s;
-}
-.lds-spinner div:nth-child(8) {
-  transform: rotate(210deg);
-  animation-delay: -0.4s;
-}
-.lds-spinner div:nth-child(9) {
-  transform: rotate(240deg);
-  animation-delay: -0.3s;
-}
-.lds-spinner div:nth-child(10) {
-  transform: rotate(270deg);
-  animation-delay: -0.2s;
-}
-.lds-spinner div:nth-child(11) {
-  transform: rotate(300deg);
-  animation-delay: -0.1s;
-}
-.lds-spinner div:nth-child(12) {
-  transform: rotate(330deg);
-  animation-delay: 0s;
-}
-@keyframes lds-spinner {
-  0% {
-    opacity: 1;
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
   }
-  100% {
-    opacity: 0;
+  .lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
   }
-}
-
-}/* Firefox */
+  .lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #fff;
+  }
+  .lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+  }
+  .lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+  }
+  .lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+  }
+  .lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+  }
+  .lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+  }
+  .lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+  }
+  .lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+  }
+  .lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+  }
+  .lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+  }
+  .lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+  }
+  .lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+  }
+  .lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+  }
+  @keyframes lds-spinner {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+} /* Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--secondary) var(--primary);
@@ -162,48 +159,45 @@
 
 *::-webkit-scrollbar-track {
   background: rgb(247, 217, 217);
-
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color:grey ;
+  background-color: grey;
   border-radius: 14px;
-  border: 1px solid  ;
+  border: 1px solid;
 }
- 
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
-   
-     padding: 0;
-     margin: 0;
+    padding: 0;
+    margin: 0;
     @apply bg-background text-foreground;
   }
   .animated-logo {
-    animation:  slide 20s linear infinite ; 
-    width:  max-content;
- 
+    animation: slide 20s linear infinite;
+    width: max-content;
   }
 
-  @keyframes slide  {
+  @keyframes slide {
     to {
-      transform : translate(calc(-50% - .5rem)) ;
+      transform: translate(calc(-50% - 0.5rem));
     }
   }
 
   .scroller {
     max-width: 100%;
   }
-  
+
   .scroller__inner {
     padding-block: 1rem;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
   }
-  
+
   .scroller[data-animated="true"] {
     overflow: hidden;
     -webkit-mask: linear-gradient(
@@ -213,28 +207,34 @@
       white 80%,
       transparent
     );
-    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
   }
-  
+
   .scroller[data-animated="true"] .scroller__inner {
     width: max-content;
     flex-wrap: nowrap;
     animation: scroll var(--_animation-duration, 40s)
       var(--_animation-direction, forwards) linear infinite;
   }
-  
+
   .scroller[data-direction="right"] {
     --_animation-direction: reverse;
   }
-  
+
   .scroller[data-direction="left"] {
     --_animation-direction: forwards;
   }
-  
+
   .scroller[data-speed="fast"] {
     --_animation-duration: 20s;
   }
-  
+
   .scroller[data-speed="slow"] {
     --_animation-duration: 60s;
   }
@@ -242,7 +242,7 @@
   .scroller[data-speed="very-low"] {
     --_animation-duration: 90s;
   }
-  
+
   @keyframes scroll {
     to {
       transform: translate(calc(-50% - 1rem));
@@ -254,47 +254,44 @@
   html.lenis {
     height: auto;
   }
-  
+
   .lenis.lenis-smooth {
     scroll-behavior: auto;
   }
-  
+
   .lenis.lenis-smooth [data-lenis-prevent] {
     overscroll-behavior: contain;
   }
-  
+
   .lenis.lenis-stopped {
     overflow: hidden;
   }
-  
+
   .lenis.lenis-scrolling iframe {
     pointer-events: none;
   }
-  
 }
-
 
 @layer components {
   .sizing {
-    @apply md:w-10/12 w-11/12 lg:w-9/12   ; 
+    @apply md:w-10/12 w-11/12 lg:w-9/12;
   }
   .chaire {
-    @apply h-10 w-9 bg-purple-200 rounded hover:scale-105 duration-300 ;
+    @apply h-10 w-9 bg-purple-200 rounded hover:scale-105 duration-300;
   }
   .link {
-    @apply hover:text-primary/90 duration-200 text-black  ; 
+    @apply hover:text-primary/90 duration-200 text-black;
   }
   .active {
-    @apply font-semibold text-primary ; 
+    @apply font-semibold text-primary;
   }
   .date-container {
-     @apply text-xl md:text-5xl  font-semibold md:border-b-[2px] md:py-1 inline-block border-gray-900 ;
+    @apply text-xl md:text-5xl  font-semibold md:border-b-[2px] md:py-1 inline-block border-gray-900;
   }
   .time-counter {
-    @apply ; 
+    @apply;
   }
   .section-title {
-    @apply text-4xl  md:text-6xl font-bold tracking-tight ; 
+    @apply text-4xl  md:text-6xl font-bold tracking-tight;
   }
-
 }
