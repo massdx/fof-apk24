@@ -2,6 +2,7 @@
 import Footer from "@/components/footer";
 import Heading from "@/components/heading";
 import Navbar from "@/components/nav-bar";
+import Link from "next/link";
 import Script from "next/script";
 import { useEffect, useState } from "react";
 
@@ -41,8 +42,8 @@ export default function FormulaireSpeakers() {
               Prêt à faire partie d'une expérience transformative ? Opportunité
               passionnante pour la mise en valeur de votre produit à Africa
               Product Keynote #APK2024 ! Pour comprendre plus en détail le
-              contour du projet, suivez{" "}
-              <span className="text-primary font-semibold"> ce lien</span>
+              contour du projet, suivez
+              <Link href={"https://www.figma.com/file/Zx4zyJwDHfPN1FtVO5zZ3k/Africa-Product-Keynote-%23APK-2024-%E2%80%94--Exemple-de-Submission?type=whiteboard&node-id=0-1&t=HJey3qROrjQcPoXe-0"} target="_blank" passHref className="text-primary font-semibold"> ce lien</Link>
             </p>
           </div>
         </div>
