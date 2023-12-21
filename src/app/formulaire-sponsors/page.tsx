@@ -31,7 +31,7 @@ export default function FormulaireSponsor() {
             <Heading>
               <h1 className="section-title md:text-center">
                 {" "}
-                Sponsorsez le évenement autour <br />
+                Sponsorisez le évenement autour <br />
                 du <span className="text-primary">produit en Afrique</span>
               </h1>
             </Heading>
