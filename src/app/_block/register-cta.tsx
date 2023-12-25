@@ -6,7 +6,7 @@ import Link from "next/link";
 const RegisterCta = () => {
   return (
     <section id="inscription" className="  flex items-center  py-14 md:py-20 lg:py-36 bg-[url(/assets/img/bg.jpg)] bg-cover bg-right text-white ">
-      <div  data-aos="fade-up"  data-aos-delay="100" className="w-11/12 md:w-9/12 mx-auto ">
+      <div  data-aos="fade-up"  data-aos-delay="100" className="media-size">
         <div className=" md:w-5/6 lg:w-4/6 mx-auto ">
           <div
             data-aos="fade-down"

@@ -9,33 +9,37 @@ const About = () => {
   return (
     <section
       id="apropos"
-      className="lg:min-h-screen py-20 lg:py-0 flex items-center w-11/12 md:w-9/12 mx-auto "
+      className="lg:min-h-screen py-20 lg:py-0 flex items-center media-size"
     >
       <div className="md:grid md:grid-cols-2 w-full ">
-        <div className="md:w-10/12" data-aos="fade-up" data-aos-delay="100">
-          <div className=" self-auto flex gap-2 items-center  border border-black  py-2 px-4 rounded-xl w-fit mb-5   ">
-            <Button
-              variant={"ghost"}
-              size={"icon"}
-              className="    bg-blue-500 rounded-full "
-            >
-              <MapPinIcon className="text-white " />
-            </Button>
-            <div className="leading-tight text-sm ">
-              {" "}
-              Lieu
-              <Link
-                href={""}
-                className="text-blue-500 block font-semibold text-lg "
-              >
-                {lieux}
-              </Link>
+        <div className="" data-aos="fade-up" data-aos-delay="100">
+          <Link href={"https://escen.university/"} target="_blank">
+            <div className=" max-w-md self-auto flex gap-4 items-center  border border-black  py-2 px-4 rounded-xl w-fit mb-5   ">
+              <div>
+                <Button
+                  variant={"ghost"}
+                  size={"icon"}
+                  className=" w-10 h-10    bg-primary rounded-full "
+                >
+                  <MapPinIcon className="text-white " />
+                </Button>
+              </div>
+              <div className="leading-tight text-sm ">
+                Lieu
+                <Link
+                  href={""}
+                  className="text-primary block font-medium text-lg"
+                >
+                  {lieux}
+                </Link>
+              </div>
             </div>
-          </div>
+          </Link>
+
           <Heading>
             <h2 className="section-title">
-              1 ère <span className="text-primary "> Conférence </span>autour du
-              produit en Afrique
+              1 ère <span className="y "> Conférence </span>autour du produit en
+              Afrique
             </h2>
           </Heading>
           <p data-aos-delay="50" className=" my-5 md:my-10 ">
@@ -90,16 +94,15 @@ const About = () => {
               </div>
             </div>
             <Image
-            data-aos="zoom-in"
-            data-aos-delay="800"
-            className="absolute hidden   md:block  md:-bottom-24 md:right-28 lg:block z-30 "
-            height={110}
-            width={110}
-            alt="moi"
-            src={"/assets/motifs/vous2.png"}
-          />
+              data-aos="zoom-in"
+              data-aos-delay="800"
+              className="absolute hidden   md:block  md:-bottom-24 md:right-28 lg:block z-30 "
+              height={110}
+              width={110}
+              alt="moi"
+              src={"/assets/motifs/vous2.png"}
+            />
           </div>
-          
         </div>
       </div>
     </section>

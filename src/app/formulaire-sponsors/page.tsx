@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Footer from "@/components/footer";
 import Heading from "@/components/heading";
 import Navbar from "@/components/nav-bar";
@@ -30,8 +30,8 @@ export default function FormulaireSponsor() {
           <div className="w-11/12 md:w-9/12 mx-auto  ">
             <Heading>
               <h1 className="section-title md:text-center">
-                {" "}
-                Sponsorisez les évenements autour <br />
+            
+                Sponsorisez les événements autour <br />
                 du <span className="text-primary">produit en Afrique</span>
               </h1>
             </Heading>

@@ -294,4 +294,7 @@
   .section-title {
     @apply text-4xl  md:text-6xl font-bold tracking-tight;
   }
+  .media-size {
+    @apply w-11/12 md:w-10/12 lg:w-9/12 mx-auto  ;
+  }
 }

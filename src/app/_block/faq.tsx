@@ -13,20 +13,20 @@ const Faq = () => {
     {
       id: 1,
       question: "Pourquoi Africa Product Keynote #APK ?",
-      answer: "Peut-on parler de produit en Afrique ou d’un produit africain ? Une légère affirmation sans chauvinisme bien-sûr nous permet de part de l’évolution de l’écosystème des solutions numériques de parler avec assurance des produits africains, pour les africains et par les africains avec des empreintes culturelles.<br/> Mais alors comment faire découvrir ces produits imprégnés de l'identité africaine ?<br/> La solution : <span className='font-semibold text-primary '> Africa Product Keynote</span><br/> Les entreprises et/ou les startups africaines jouent un rôle essentiel en offrant des solutions durables axées sur l’inclusion. Par le biais de la technologie, nous devons proposer des produits de qualité et rendre les solutions accessibles à tous et toutes.<br/> En intégrant des expériences locales imaginatives dans leurs produits, les entreprises peuvent aider à moderniser et à renforcer les relations entre les populations, à améliorer leurs styles de vie et à contribuer à la stabilité socio-économique de l’Afrique.",
+      answer: "L'évolution de l'écosystème numérique permet d'affirmer avec assurance l'existence de produits africains, pour et par les Africains, imprégnés d'empreintes culturelles. <br/><span className=”font-medium”>  #APK2024</span> célèbre ces produits, ancrés dans l'écosystème numérique évolutif. <br/> La solution : <span className='font-medium'> Africa Product Keynote </span>. Les entreprises africaines, moteurs de solutions durables, utilisent la technologie pour proposer des produits de qualité, intégrant des expériences locales. Elles contribuent ainsi à la modernisation, renforcent les liens sociaux, améliorent les modes de vie et soutiennent la stabilité socio-économique de l’Afrique.",
       linked: false,
     },
     {
       id: 2,
       question: "Qui Organise le #APK2024 ?",
-      answer: "Partir de nos cultures pour façonner les expériences et coordonner les attentes. C’est dans cette perspective que <span className='font-semibold'>Friends of Figma Lomé</span> initie Africa Product Keynote en collaboration avec  <span className='font-semibold'>les Friends of Figma Cotonou, Abidjan, Dakar et Douala</span>, qui vise à réunir les professionnels du domaine (marketing, design, produit…) d’Afrique pour échanger sous le thème <span className='font-semibold'>‘’Accessibilité’’</span>. Elle se déroulera une fois par an et aura pour objectif de promouvoir l'innovation en Afrique et de mettre en avant les entrepreneurs qui travaillent dans ce domaine",
+      answer: "Partir de nos cultures pour façonner les expériences et coordonner les attentes. C’est dans cette perspective que <span className=’font-medium’>Friends of Figma Lomé</span> initie Africa Product Keynote en collaboration avec  <span className='font-medium'>les Friends of Figma Cotonou, Abidjan, Dakar et Douala</span>, qui vise à réunir les professionnels du domaine (marketing, design, produit…) d’Afrique pour échanger sous le thème <span className='font-medium'>‘’Accessibilité’’</span>. <br/> Elle se déroulera une fois par an et aura pour objectif de promouvoir l'innovation en Afrique et de mettre en avant les entrepreneurs qui travaillent dans ce domaine.",
       linked: false,
     },
     {
       id: 3,
       question: "Quel est le thème et pourquoi ce thème ?",
       answer:
-        "Pour cette première édition, avec le thème :<span className='font-semibold'> Accessibilité </span>, nous voulons signifier l’importance en Afrique de se concentrer sur la création d'opportunités réelles et accessibles pour que chaque africain et africaine puisse être autonome",
+        "Pour cette première édition, avec le thème : <span className='font-medium text-primary'>Accessibilité</span>, nous voulons signifier l’importance en Afrique de se concentrer sur la création d'opportunités réelles et accessibles pour que chaque africain et africaine puisse être autonome.",
    
       linked: false,
     },
@@ -35,7 +35,7 @@ const Faq = () => {
       question:
         "Quels sont les objectifs ?",
       answer:
-        "<span className='font-semibold text-lg block '>Objectif général</span> Montrer comment les produits africains ou en Afrique peuvent réduire la tradition de l’exclusion via une vision orientée accessibilité pour toutes les personnes sans discrimination. <br/><br/> <span className='font-semibold text-lg block '>Objectifs spécifiques</span> 1. Améliorer l'accès des populations locales aux produits digitaux africains ; <br/> 2. Améliorer le processus de recherche et développement pour les produits digitaux africains",
+        "<span className='font-semibold'>Objectif général</span> <br/> Montrer comment les produits africains ou en Afrique peuvent réduire la tradition de l’exclusion via une vision orientée accessibilité pour toutes les personnes sans discrimination.<br/><br/> <span className='font-semibold'>Objectifs spécifiques</span> <br/> Améliorer l'accès des populations locales aux produits digitaux africains ; <br/> Améliorer le processus de recherche et développement pour les produits digitaux africains. <br/>",
       isOpen: false,
       linked: false,
     },
@@ -53,7 +53,7 @@ const Faq = () => {
       question:
         "Quand et où se tiendra  l’event ?",
       answer:
-        "Du <span className='font-semibold text-primary'>19</span> au <span className='font-semibold text-primary'>20 Janvier 2024 </span>  à Lomé",
+        "Du <span className='font-semibold '>19</span> au <span className='font-semibold '>20  </span>  Janvier 2024 à Lomé  dans les locaux de l'École Supérieure de Commerce et de l’Économie Numérique.",
       isOpen: false,
       linked: false,
     },
@@ -61,7 +61,7 @@ const Faq = () => {
       id: 7,
       question: "Qui participe à la conférence ?",
       answer:
-        " <span className='font-semibold '>Africa Product Keynote #apk2024</span> suscitera de nouvelles idées et incitera le public à penser différemment, à penser Produit et accessibilité :<br/><br/> - Lead Designers<br/> -CTO<br/> - Lead Product Manager<br/> - Chefs d’entreprises<br/> - Responsables de haut niveau à tous les niveaux de l'administration, qui participent à l'évaluation, à la sélection, à l'acquisition ou à la gestion des technologies, l'évaluation, la sélection, l'acquisition ou la gestion des technologies.<br/> - Des représentants de haut niveau d'organisations TIC de grande, moyenne et petite taille.<br/> - Des innovateurs, des chefs d'entreprise et des entrepreneurs du monde entier.<br/>",
+        "Lead Designers, CTO, Lead Product Manager, Chefs d’entreprises, Responsables de haut niveau dans l'administration, impliqués dans l'évaluation, la sélection, l'acquisition ou la gestion des technologies.<br/> Représentants de haut niveau d'organisations TIC de toutes tailles.<br/> Innovateurs, chefs d'entreprise et entrepreneurs du monde entier. <br/>",
       isOpen: false,
       linked: false,
     },
@@ -85,7 +85,7 @@ const Faq = () => {
       id: 10,
       question: "Comment participer à Africa Product Keynote ?",
       answer:
-        "C’est un événement hybride. Qui se fera donc en ligne et en présentiel.<br/> Opportunité passionnante à Africa Product Keynote !<br/><br/> Prêt à faire partie d'une expérience transformative ? Voici votre guide pour vous impliquer :<br/><br/> <span className='font-semibold'> SPONSORS et PARTENAIRES </span>: Mettez en valeur votre marque en remplissant ce   <a href='/formulaire-sponsors' target='_blank' className='text-primary font-medium'>formualire</a> : Rejoignez-nous pour façonner l'avenir de l'innovation en Afrique !<br/><br/>   <span className='font-semibold'> SPEAKERS </span>: Partagez vos idées et votre expertise !<a href='/formulaire-intervenants' target='_blank' className='text-primary font-medium'>Cliquez ici </a>  pour choisir le type de présentation, vous présenter, préciser si vous serez seul ou en duo, et définir votre thème ainsi que les attentes des participants.<br/><br/>  <span className='font-semibold'> PARTICIPANTS </span>: Impliquez-vous avec nous ! Que ce soit en ligne ou en personne, votre présence compte. <a href=' https://friends.figma.com/e/mpc4v3/' target='_blank' className='text-primary font-medium'>Cliquez ici</a>  pour réserver votre place.",
+        "C’est un événement hybride. Qui se fera donc en ligne et en présentiel.<br/> Opportunité passionnante à Africa Product Keynote !<br/><br/> Commme SPONSORS et PARTENAIRES : <a href='/formulaire-sponsors' target='_blank' className='text-primary font-medium'>voici le formulaire</a>  </a><br/> <br/>Pour les SPEAKERS : <a href='/formulaire-intervenants' target='_blank' className='text-primary font-medium'>Cliquez ici </a><br/><br/> Et aux PARTICIPANTS: <a href=' https://friends.figma.com/e/mpc4v3/' target='_blank' className='text-primary font-medium'>Cliquez ici</a>.",
       isOpen: false,
       linked: true,
       links: [
