@@ -87,8 +87,8 @@ const  Sponsors = () => {
             <h6  className=" md:text-center section-title " data-aos="fade-up">Ils partagent notre histoire.</h6>
           </Heading>
           <Swiper
-        slidesPerView={4}
-        spaceBetween={30}
+        slidesPerView={5}
+        spaceBetween={20}
         freeMode={true}
         autoplay={{
           delay: 2500,
@@ -98,15 +98,15 @@ const  Sponsors = () => {
           clickable: true,
         }}
         modules={[FreeMode, Pagination , Autoplay]}
-        className="mySwipe  my-10  md:my-20 "
+        className="mySwipe  my-10  md:my-20 place-items-center  items-center "
       >
          {sponsors.map((p, index) => (
-          <SwiperSlide key={index} className=" mt-5  mb-14 flex items-center h-full  justify-center">
+          <SwiperSlide key={index} className=" mb-14   ">
             <Image
-              className="w-auto h-8 md:h-10 mx-auto "
+              className="w-28 h-28  object-contain mx-auto "
               key={index}
-              height={200}
-              width={200}
+              height={300}
+              width={300}
               alt={p.name}
               src={p.url}
               data-aos="zoom-in"
