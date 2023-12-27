@@ -98,7 +98,7 @@ const  Sponsors = () => {
           clickable: true,
         }}
         modules={[FreeMode, Pagination , Autoplay]}
-        className="mySwipe  my-10  md:my-18 "
+        className="mySwipe  my-10  md:my-20 "
       >
          {sponsors.map((p, index) => (
           <SwiperSlide key={index} className=" mt-5  mb-14 flex items-center h-full  justify-center">
