@@ -86,11 +86,35 @@ const  Sponsors = () => {
           <Heading>
             <h6  className=" md:text-center section-title " data-aos="fade-up">Ils partagent notre histoire.</h6>
           </Heading>
-          <div data-aos="fade-in" className="flex flex-wrap items-center md:justify-center  gap-10 md:gap-20  my-10 md:place-items-center md:my-20 ">
-          {sponsors.map((s, index ) =><div  key={index} className=" h-10 md:h-auto ">
-            <Image className="w-auto   object-fill" height={100} width={100} alt={s.name} src={s.url}  data-aos="zoom-in"  data-aos-delay={100 * index }/>
-          </div> )}
-          </div>
+          <Swiper
+        slidesPerView={4}
+        spaceBetween={30}
+        freeMode={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination , Autoplay]}
+        className="mySwipe  my-10  md:my-18 "
+      >
+         {sponsors.map((p, index) => (
+          <SwiperSlide key={index} className=" mt-5  mb-14 flex items-center h-full  justify-center">
+            <Image
+              className="w-auto h-8 md:h-10 mx-auto "
+              key={index}
+              height={200}
+              width={200}
+              alt={p.name}
+              src={p.url}
+              data-aos="zoom-in"
+              data-aos-delay={100 * index}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
           <div data-aos="fade-up" data-aos-detaly="100" className="flex md:items-center w-full gap-5   mt-10  md:justify-center">
                 <Button className="">
                     <Link href={AppRoute.formulaireSponsor} passHref>
