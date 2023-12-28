@@ -6,7 +6,7 @@ import Link from "next/link";
 const Why = () => {
   return (
     <section className="  bg-[#FDFBFC]    md:min-h-screen flex items-center">
-      <div className="md:w-9/12 w-11/12 mx-auto">
+      <div className="media-size">
         <Heading>
           <h3
             data-aos="fade-up"
@@ -168,7 +168,7 @@ const Why = () => {
           className="flex items-center w-full   mt-10  md:justify-center"
         >
           <Button className=" ">
-            <Link href={"#"} passHref>
+            <Link href={"https://friends.figma.com/events/details/figma-lome-togo-presents-africans-product-keynotes/"} target="_blank" passHref>
               S'inscrire maintenant
             </Link>
           </Button>

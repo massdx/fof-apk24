@@ -43,10 +43,7 @@ const About = () => {
             </h2>
           </Heading>
           <p data-aos-delay="50" className=" my-5 md:my-10 ">
-            Placée sous le sous thème de{" "}
-            <span className="font-semibold">l’Accessibilité</span>, cette
-            conférence autour du Produit se veut construire un pont entre les
-            responsables produits, la cibles et le besoin de cette dernière.
+          l'Africa Product Keynote (APK) explore le thème de  <span className="font-semibold">l’Accessibilité</span> du 19 au 20 janvier 2024. Destiné aux passionnés de produits, cet événement réunira des professionnels du marketing, du design et du produit pour des ateliers de design, des keynotes inspirantes et des présentations de produits africain.
           </p>
 
           <div className="flex my-10 md:mb-0  gap-5">

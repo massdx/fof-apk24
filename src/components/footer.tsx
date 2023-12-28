@@ -39,7 +39,7 @@ const Footer = () => {
                     de Friends of Figma Lomé, Togo.
                   </div>
 
-                  <div className="flex items-end gap-5 mt-5 ">
+                  <div className="flex flex-wrap items-end gap-5 mt-5 ">
                     <Link
                       passHref
                       href={"mailto:foflome@gmail.com"}

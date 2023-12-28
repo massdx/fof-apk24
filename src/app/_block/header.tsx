@@ -82,15 +82,7 @@ const Header = () => {
               data-aos-delay="200"
               className=" text-md md:text-xl my-5  md:my-7 "
             >
-              L'évolution dynamique de l'écosystème des solutions numériques
-              nous permet aujourd'hui d'affirmer avec confiance, l'émergence de
-              produits africains, conçus par et pour les Africains, tout en
-              portant fièrement nos empreintes culturelles. Cependant, le défi
-              réside dans la découverte de ces produits.
-              La réponse est simple  :
-              <span className="font-semibold ">
-              {" "} Africa Product Keynote #APK2024
-              </span>
+           Un événement visionnaire dédié à catalyser l'innovation africaine. En réunissant des esprits créatifs et des experts du domaine, l'APK vise à élargir l'accès aux solutions digitales, favorisant une inclusion numérique et des pratiques de recherche et développement optimisées pour les produits africains.
             </p>
             <div
               data-aos="fade-up"
