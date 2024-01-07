@@ -28,7 +28,8 @@
     "sharp": "^0.33.0",
     "swiper": "^11.0.5",
     "tailwind-merge": "^2.0.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "tailwindcss-animated": "^1.0.1"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",

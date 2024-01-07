@@ -14,6 +14,7 @@ import AOS from "aos"
 import 'aos/dist/aos.css';
 import { LocalisationCta } from './_block/localisation-cta'
 import Faq from './_block/faq'
+import { Flying } from '@/components/flying'
 
 export default function Home() {
 
@@ -28,9 +29,9 @@ export default function Home() {
     }
   }, [])
   return <>
+  <Flying/>
     <Navbar />
     <Header />
-
     <About />
     <Why />
     <Speakers />

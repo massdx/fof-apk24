@@ -82,7 +82,7 @@ export default function FormulaireSpeakers() {
               </div>
             )}
 
-            <iframe
+            {/* <iframe
               className={`${
                 isLoading ? "opacity-0" : "opacity-100 animate-in fade-in-10"
               } `}
@@ -96,7 +96,7 @@ export default function FormulaireSpeakers() {
               title="
 Formulaire d’Appel aux Speakers__
 "
-            ></iframe>
+            ></iframe> */}
           </div>
         </div>
       </section>

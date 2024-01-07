@@ -14,7 +14,9 @@ const Speakers = () => {
           </h2>
         </Heading>
         <p className="max-w-4xl  md:mx-auto md:text-center leading-relaxed text-gray-800 my-10">
-        Soyez dès maintenant membre de nos <span className="text-primary font-medium "> Cores Speakers</span> pour inspirer les réussites concrètes de  <span className="text-primary font-medium"> Africa Product Keynote</span>  et faire découvrir comment Les pensées créatives peuvent avoir un impact social incroyable.
+        La sélection des speakers est en cours, et nous avons hâte de partager avec vous la liste exceptionnelle d'acteur du secteur du produit.
+        <br />
+       <span className="font-semibold"> Restez connectés !</span>
         </p>
         {/*  <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 w-full  gap-6 gap-y-10  place-items-center place-content-center my-20 ">
                 <SpeakerCard delay={100} />
@@ -25,11 +27,11 @@ const Speakers = () => {
         <div
           className="flex flex-wrap md:items-center w-full gap-5 flex-row  mt-10  md:justify-center"
         >
-          <Button className="" variant={"secondary"}>
+         {/**<Button className="" variant={"secondary"}>
             <Link href={AppRoute.formualireSpeaker} passHref>
             Postulez maintenant!
             </Link>
-          </Button>
+          </Button>*/} 
           {/* 
                 <Button variant={"secondary"} className=" ">
                     <Link href={"#"} passHref>

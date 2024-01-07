@@ -26,10 +26,10 @@ const RegisterCta = () => {
 
           <p
           
-            className="md:text-center my-5 md:my-10  "
+            className="md:text-center my-5 md:my-10 max-w-2xl mx-auto "
           >
             Apprendre du produit sur le produit et pour le produit en
-            participant à la grande fête autour du Produit en Afrique.
+            participant à la grande  fête autour du Produit en Afrique.
           </p>
         </div>
         <div className="flex flex-wrap md:items-center w-full gap-5 flex-row  mt-10  md:justify-center">
@@ -40,11 +40,6 @@ const RegisterCta = () => {
               passHref
             >
               Je reserve ma place
-            </Link>
-          </Button>
-          <Button variant={"secondary"} className=" ">
-            <Link href={AppRoute.formualireSpeaker} passHref>
-              Je suis speaker
             </Link>
           </Button>
         </div>
