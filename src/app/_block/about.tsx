@@ -1,11 +1,19 @@
 import Heading from "@/components/heading";
 import { Button } from "@/components/ui/button";
 import { lieux } from "@/contents/contents";
+import { useLenis } from "@studio-freight/react-lenis";
 import { MapPinIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const About = () => {
+  const lenisInstance = useLenis();
+
+  function scrollTo({ target }: { target: string }) {
+    if (lenisInstance) {
+      lenisInstance.scrollTo(target);
+    }
+  }
   return (
     <section
       id="apropos"
@@ -52,10 +60,10 @@ const About = () => {
                 s'inscrire
               </Link>
             </Button>
-            <Button variant={"secondary"} className="">
-              <Link href={"#"} passHref>
+            <Button onClick={() => scrollTo({target: "#programme"})} variant={"secondary"} className="">
+             
                 Le programme
-              </Link>
+            
             </Button>
           </div>
         </div>

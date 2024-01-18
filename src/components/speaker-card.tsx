@@ -2,13 +2,13 @@ import Image from "next/image"
 import { Button } from "./ui/button";
 import { Ghost, TwitterIcon } from "lucide-react";
 
-const SpeakerCard = ({ delay = 100 }: { delay?: number }) => {
+const SpeakerCard = ({ title , name , agency, profil , delay = 100 } : { title: string , name: string , agency: string ,  profil: string , delay?: number }) => {
     return <div className="" data-aos="zoom-in" data-aos-delay={delay}>
         <div className="w-fit group flex items-center justify-center flex-col relative">
 
             <div className="relative">
-                <div className={`md:w-[12rem] md:h-[12rem] bg-gray-500 rounded-full overflow-hidden  `}>
-                    <Image src="https://plus.unsplash.com/premium_photo-1700335324570-18fe238a9b0e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="h-full w-full object-cover hover:scale-105 duration-500" alt="" height={300} width={300} />
+                <div className={` w-40  h-40 md:w-[12rem] md:h-[12rem] bg-gray-500 group-hover:scale-105 duration-300 rounded-full overflow-hidden  `}>
+                    <Image src={profil} alt="" height={300} width={300} />
 
                 </div>
                 <Button className="absolute bottom-0 right-5 group-hover:text-white group-hover:bg-primary text-blue-500 duration-200 bg-white rounded-full " variant={"ghost"} size={"icon"}>
@@ -19,12 +19,13 @@ const SpeakerCard = ({ delay = 100 }: { delay?: number }) => {
             </div>
 
 
-            <div className="flex flex-col gap-1 items-center justify-center mt-5 ">
+            <div className="flex flex-col gap-0 items-center justify-center mt-5 ">
 
-                <span className="text-lg font-medium">Nom et prenom</span>
-                <span className=" group-hover:text-primary duration-200">@twiter</span>
+                <span className="text-lg font-medium text-center line-clamp-1  " >{name}</span>
+                <span className="md:text-lg text-center line-clamp-1 ">{title}</span>
+                <span className=" md:text-md text-sm   text-primary font-semibold group-hover:text-primary duration-200">{agency}</span>
 
-                <span className="font-semibold text-lg ">Profession</span>
+                
             </div>
         </div>
     </div>
