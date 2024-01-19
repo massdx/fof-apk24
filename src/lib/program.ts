@@ -129,7 +129,7 @@ export const program: ProgramType[] = [
       {
         debut: "14:30",
         fin: "15:30",
-        title: "Accessibilité dans le développement d'applications mobile avec Flutter",
+        title: "Une méthode d évaluation SHADOWIN : Cas de l'application ZON A",
         type: "workshop",
         intervenant: "Mawuo Emmauel SENOU",
       },
