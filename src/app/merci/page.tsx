@@ -61,7 +61,10 @@ export default function Merci() {
 
   return (
     <>
+   
+      <Navbar />
       <ReactCanvasConfetti
+      className="z-50"
         refConfetti={getInstance}
         style={{
           position: "fixed",
@@ -72,7 +75,6 @@ export default function Merci() {
           left: 0,
         }}
       />
-      <Navbar />
       <section className="lg:min-h-screen  md:py-20 ld:py-0 bg-[url(/assets/img/background.jpg)]   md:bg-right-top  bg-[50%] md:bg-contain  bg-no-repeat  ">
         <div className="sizing mx-auto relative md:mt-0 pt-20 md:pt-32 ">
           <div className="md:w-11/12 lg:w-8/12 md:flex  gap-8 ">

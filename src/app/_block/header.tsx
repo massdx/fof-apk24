@@ -1,21 +1,85 @@
+"use client"
 import { Counter } from "@/components/counter";
 import Heading from "@/components/heading";
-import TimeCounter from "@/components/time";
 import { Button } from "@/components/ui/button";
-import { AppRoute } from "@/lib/app-route";
-import Image from "next/image";
-import Link from "next/link";
-import { Lenis, useLenis } from "@studio-freight/react-lenis";
-const Header = () => {
 
+import Image from "next/image";
+
+import { Lenis, useLenis } from "@studio-freight/react-lenis";
+import { useCallback, useEffect, useRef } from "react";
+import ReactCanvasConfetti from "react-canvas-confetti";
+
+const Header = () => {
+  useEffect(() => { fire()} , []);
   const lenisInstance = useLenis();
  function scrollTo({ target }: { target: string }) {
     if (lenisInstance) {
       lenisInstance.scrollTo(target);
     }
   }
-  return (
-    <header className="min-h-screen   flex items-center relative bg-[url(/assets/img/background.jpg)]   md:bg-right-top  bg-[50%] md:bg-contain  bg-no-repeat ">
+  const refAnimationInstance = useRef<((opts: any) => void) | null>(null);
+
+  const getInstance = useCallback((instance: any) => {
+    refAnimationInstance.current = instance;
+  }, []);
+
+  const makeShot = useCallback((particleRatio: number, opts: any) => {
+    refAnimationInstance.current &&
+      refAnimationInstance.current({
+        ...opts,
+        origin: { y: 0.7 },
+        particleCount: Math.floor(200 * particleRatio),
+      });
+  }, []);
+
+  const fire = useCallback(() => {
+    makeShot(0.25, {
+      spread: 26,
+      startVelocity: 55,
+    });
+
+    makeShot(0.2, {
+      particleCount: 2,
+      spread: 60,
+      angle: 60,
+      origin: { x: 0 },
+    });
+
+    makeShot(0.35, {
+      particleCount: 2,
+      spread: 100,
+      angle: 120,
+      origin: { x: 1 },
+    });
+
+    makeShot(0.1, {
+      spread: 120,
+      startVelocity: 25,
+      decay: 0.92,
+      scalar: 1.2,
+    });
+
+    makeShot(0.1, {
+      spread: 120,
+      startVelocity: 45,
+    });
+  }, [makeShot]);
+  return (<>
+  
+  <ReactCanvasConfetti
+      refConfetti={getInstance}
+      style={{
+        position: "fixed",
+        zIndex: "999",
+        pointerEvents: "none",
+        width: "100%",
+        height: "100%",
+        top: 0,
+        left: 0,
+      }}
+    />
+
+  <header className="min-h-screen   flex items-center relative bg-[url(/assets/img/background.jpg)]   md:bg-right-top  bg-[50%] md:bg-contain  bg-no-repeat ">
       <div className="sizing mx-auto relative md:mt-0 pt-20 md:pt-32 ">
         <div className="md:w-11/12 lg:w-8/12 md:flex  gap-8 ">
           <div
@@ -117,6 +181,10 @@ const Header = () => {
         </div>
       </div>
     </header>
+
+ 
+  </>
+   
   );
 };
 
