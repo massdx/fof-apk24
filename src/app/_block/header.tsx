@@ -5,8 +5,15 @@ import { Button } from "@/components/ui/button";
 import { AppRoute } from "@/lib/app-route";
 import Image from "next/image";
 import Link from "next/link";
-
+import { Lenis, useLenis } from "@studio-freight/react-lenis";
 const Header = () => {
+
+  const lenisInstance = useLenis();
+ function scrollTo({ target }: { target: string }) {
+    if (lenisInstance) {
+      lenisInstance.scrollTo(target);
+    }
+  }
   return (
     <header className="min-h-screen   flex items-center relative bg-[url(/assets/img/background.jpg)]   md:bg-right-top  bg-[50%] md:bg-contain  bg-no-repeat ">
       <div className="sizing mx-auto relative md:mt-0 pt-20 md:pt-32 ">
@@ -89,16 +96,20 @@ const Header = () => {
               data-aos-delay="300"
               className="flex my-10 gap-2  md:gap-5"
             >
-              <Button className="  ">
+             {/* <Button className="  ">
                 <Link href={AppRoute.formulaireParticipants} target="_blank" passHref>
                   Inscription
                 </Link>
+              </Button>**/} <Button onClick={() => scrollTo({target: "#programme"})} className="  ">
+              
+                  Voir le programme
+               
               </Button>
 
-              <Button variant={"secondary"} className="">
-                <Link href={"#apropos"} passHref>
-                  En savoir plus
-                </Link>
+              <Button  onClick={() => scrollTo({target: "#localisation"})} variant={"secondary"} className="">
+               
+                  Lieu de l'APK
+                
               </Button>
             </div>
             <Counter target={"2024-01-19T07:59:59"} />

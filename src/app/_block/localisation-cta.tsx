@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export function LocalisationCta() {
   return (
-    <section className=" w-11/12 lg:w-9/12 mx-auto   flex items-center py-10 md:py-32">
+    <section id="localisation" className=" w-11/12 lg:w-9/12 mx-auto   flex items-center py-10 md:py-32">
       <div className="  w-full h-full bg-[45%] grid gap-5 lg:grid-cols-2 mb-5 bg-cover bg-no-repeat py-20">
         <div  data-aos="fade-up"  data-aos-delay="100" className="w-11/12   mx-auto md:w-full md:mx-0 md:p-5 ">
           <Heading>
